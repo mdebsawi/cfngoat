@@ -370,6 +370,8 @@ Resources:
           Value: "2021-08-23 13:51:41"
         - Key: git_last_modified_by
           Value: nimrodkor@gmail.com
+      PublicAccessBlockConfiguration:
+        BlockPublicPolicy: True
 
   #############
   ###  IAM  ###
@@ -941,7 +943,7 @@ Resources:
         - Key: git_org
           Value: bridgecrewio
       PublicAccessBlockConfiguration:
-        RestrictPublicBuckets: True
+        BlockPublicPolicy: True
 
   ### TODO - Custom Upload of insecure document
   FinancialsBucket:
@@ -970,6 +972,8 @@ Resources:
           Value: bridgecrewio
         - Key: git_repo
           Value: cfngoat
+      PublicAccessBlockConfiguration:
+        BlockPublicPolicy: True
   OperationsBucket:
     # not encrypted, no access logs
     Type: AWS::S3::Bucket
@@ -998,6 +1002,8 @@ Resources:
           Value: jonathan.jozwiak@googlemail.com
         - Key: yor_trace
           Value: 9e00e7c2-b27c-4141-af5a-2d90c9632a23
+      PublicAccessBlockConfiguration:
+        BlockPublicPolicy: True
   DataScienceBucket:
     # not encrypted
     Type: AWS::S3::Bucket
@@ -1029,6 +1035,8 @@ Resources:
           Value: 11266986-850e-41eb-b980-7b4d8d49f919
         - Key: git_org
           Value: bridgecrewio
+      PublicAccessBlockConfiguration:
+        BlockPublicPolicy: True
   LogsBucket:
     # not encrypted
     Type: AWS::S3::Bucket
@@ -1062,6 +1070,8 @@ Resources:
           Value: "2021-08-23 13:51:41"
         - Key: git_last_modified_by
           Value: nimrodkor@gmail.com
+      PublicAccessBlockConfiguration:
+        BlockPublicPolicy: True
 
    ########################
    ### Clean S3 Buckets ###
