@@ -26,6 +26,8 @@ Parameters:
     
     # added by Moawiah for testing
 
+    
+
 Resources:
   ####################
   ###  EC2 in VPC  ###
